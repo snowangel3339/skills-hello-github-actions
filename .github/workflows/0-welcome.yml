@@ -8,9 +8,9 @@ name: Step 0, Welcome
 on:
   workflow_dispatch:
   push:
+  pull_request:
     branches:
-      - main
-
+      -main
 # Reference: https://docs.github.com/en/actions/security-guides/automatic-token-authentication
 permissions:
   # Need `contents: read` to checkout the repository.
